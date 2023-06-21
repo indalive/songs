@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Listen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+        // let data = JSON.parse(new URLSearchParams(window.location.search).get('tgWebAppStartParam'))
+        location.replace("https://" + Telegram.WebApp.initDataUnsafe.start_param.replace("_", "."))
+        // if (data) {
+        //   if (data['AppleMusic']) {
+        //     $('#hrefAppleMusic').attr('href', data['AppleMusic'])
+        //     $('#hrefAppleMusic').css('visibility' ,'visible')
+        //   }
+        //   if (data['Spotify']) {
+        //     $('#hrefSpotify').attr('href', data['Spotify'])
+        //     $('#hrefSpotify').css('visibility' ,'visible')
+        //   }
+        //   if (data['YouTube']) {
+        //     $('#hrefYouTube').attr('href', data['YouTube'])
+        //     $('#hrefYouTube').css('visibility' ,'visible')
+        //   }
+        //   if (data['YouTubeMusic']) {
+        //     $('#hrefYouTubeMusic').attr('href', data['YouTubeMusic'])
+        //     $('#hrefYouTubeMusic').css('visibility' ,'visible')
+        //   }
+        //   if (data['SoundCloud']) {
+        //     $('#hrefSoundCloud').attr('href', data['SoundCloud'])
+        //     $('#hrefSoundCloud').css('visibility' ,'visible')
+        //   }
+        //   if (data['YandexMusic']) {
+        //     $('#hrefYandexMusic').attr('href', data['YandexMusic'])
+        //     $('#hrefYandexMusic').css('visibility' ,'visible')
+        //   }
+        // }
+      })
+    </script>
+    <style>
+      .css-2b3un8 {
+        font-weight: 500;
+        color: #122130;
+        font-size: 11px;
+        margin-top: 8px;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .css-jnwrwc {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .css-1spf6ft {
+        display: block;
+        width: 33%;
+        visibility: collapse;
+      }
+      .css-u4eldh {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="css-jnwrwc">
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefAppleMusic">
+        <div class="css-u4eldh">
+          <svg width="36" height="36" viewBox="0 0 80 80">
+            <circle cx="40" cy="40" r="40" fill="url(#paint0_linear-apple-music-circle-icon)"></circle>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M56.5557 12.2227C56.3668 12.2449 54.6446 12.5449 54.4334 12.5893L30.6557 17.3893H30.6445C30.0223 17.5227 29.5334 17.7449 29.1668 18.056C28.7112 18.4338 28.4668 18.9782 28.3668 19.6004C28.3445 19.7338 28.3112 20.0004 28.3112 20.4004C28.3112 20.4004 28.3112 44.6893 28.3112 50.156C28.3112 50.856 28.2557 51.5227 27.789 52.1004C27.3223 52.6782 26.7334 52.8449 26.0557 52.9893C25.5334 53.0893 25.0223 53.2005 24.5001 53.3004C22.5334 53.7005 21.2557 53.9671 20.1001 54.4116C18.989 54.8449 18.1668 55.3893 17.5001 56.0782C16.189 57.4449 15.6557 59.3116 15.8445 61.056C16.0001 62.5449 16.6668 63.9671 17.8223 65.0116C18.6001 65.7227 19.5668 66.2671 20.7112 66.4893C21.9001 66.7227 23.1557 66.6449 25.0001 66.2671C25.9779 66.0671 26.9001 65.756 27.7779 65.2449C28.6445 64.7338 29.389 64.056 29.9668 63.2227C30.5445 62.3893 30.9223 61.4671 31.1334 60.4782C31.3445 59.4671 31.4001 58.5449 31.4001 57.5338V31.7338C31.4001 30.356 31.789 29.9893 32.9112 29.7116C32.9112 29.7116 52.6779 25.7227 53.6001 25.5449C54.889 25.3004 55.489 25.6671 55.489 27.0116V44.6338C55.489 45.3338 55.4779 46.0338 55.0112 46.6116C54.5445 47.1893 53.9557 47.356 53.2779 47.5004C52.7557 47.6004 52.2445 47.7116 51.7223 47.8116C49.7557 48.2116 48.4779 48.4782 47.3223 48.9227C46.2112 49.356 45.389 49.9004 44.7223 50.5893C43.4112 51.956 42.8334 53.8227 43.0223 55.5671C43.1779 57.056 43.889 58.4782 45.0445 59.5227C45.8223 60.2338 46.789 60.756 47.9334 60.9893C49.1223 61.2227 50.3779 61.1449 52.2223 60.7671C53.2001 60.5671 54.1223 60.2782 55.0001 59.756C55.8668 59.2449 56.6112 58.5671 57.189 57.7338C57.7668 56.9004 58.1445 55.9782 58.3557 54.9893C58.5668 53.9782 58.5779 53.056 58.5779 52.0449V14.3227C58.5668 12.956 57.8445 12.1116 56.5557 12.2227Z" fill="white"></path>
+            <defs>
+              <linearGradient id="paint0_linear-apple-music-circle-icon" x1="40" y1="79.6961" x2="40" y2="1.72435" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FA233B"></stop>
+                <stop offset="1" stop-color="#FB5C74"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="css-2b3un8">Apple Music</div>
+        </div>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefSpotify">
+        <div class="css-u4eldh">
+          <svg width="36" height="36" viewBox="0 0 45 45">
+            <path style="fill:#1dd069" d="M45.71,23.22a22.5,22.5,0,1,0-6.59,15.91,22.5,22.5,0,0,0,6.59-15.91Z"
+                transform="translate(-0.71 -0.73)"></path>
+            <path style="fill:#fff"
+                d="M38.46,16.7a25.43,25.43,0,0,0-2.34-1.21q-1.18-.53-2.44-1A37.88,37.88,0,0,0,27.5,13a46.8,46.8,0,0,0-6.33-.59q-1.3,0-2.6,0t-2.6.16c-.83.08-1.64.17-2.43.29s-1.61.27-2.41.46l-1,.24c-.32.09-.66.18-1,.28A2.44,2.44,0,0,0,8,14.74a2.53,2.53,0,0,0,1.37,3.86,2.46,2.46,0,0,0,.72.1,2.84,2.84,0,0,0,.71-.1l.23-.06c.56-.15,1.11-.3,1.67-.42.86-.19,1.73-.33,2.6-.43s1.77-.18,2.65-.22,1.55-.06,2.32-.05,1.54,0,2.32.08,1.49.11,2.23.2,1.46.19,2.19.32c1.06.19,2.1.41,3.12.69a27.65,27.65,0,0,1,3,1q.75.3,1.46.65c.47.23.94.48,1.42.75a2.58,2.58,0,0,0,1.27.34,2.51,2.51,0,0,0,2.19-1.27,2.57,2.57,0,0,0,.33-1.26v-.06s0-.07,0-.13a3,3,0,0,0-.05-.36,2.45,2.45,0,0,0-.45-1,2.73,2.73,0,0,0-.8-.69Z"
+                transform="translate(-0.71 -0.73)"></path>
+            <path style="fill:#fff"
+                d="M29.87,21.55a33.53,33.53,0,0,0-5.77-1.3A34.39,34.39,0,0,0,18.19,20c-.94,0-1.86.11-2.77.22s-1.82.27-2.74.47l-1.11.27-1.08.31A2.08,2.08,0,0,0,9.43,22,2.22,2.22,0,0,0,9,23.23a2.15,2.15,0,0,0,.35,1.25,2.18,2.18,0,0,0,1,.83,2.15,2.15,0,0,0,.78.16,2.51,2.51,0,0,0,.75-.11,24.79,24.79,0,0,1,3.61-.78,28.69,28.69,0,0,1,3.87-.27c1,0,2,0,2.91.14s1.87.22,2.81.4a28.37,28.37,0,0,1,3.54.9A23.34,23.34,0,0,1,32,27.12c.35.18.69.37,1,.57l.38.21a2.25,2.25,0,0,0,1.64.24,2.15,2.15,0,0,0,1.33-1,2.23,2.23,0,0,0,.25-1.67,2.14,2.14,0,0,0-1-1.33h0L35.38,24a25.6,25.6,0,0,0-2.69-1.39,27.9,27.9,0,0,0-2.82-1.07Z"
+                transform="translate(-0.71 -0.73)"></path>
+            <path style="fill:#fff"
+                d="M24.13,27.42a30.78,30.78,0,0,0-4.36-.34h0l-.91,0c-.69,0-1.39.07-2,.12-.88.07-1.76.19-2.64.33s-1.75.31-2.61.51l-.22.06h0l-.25.08a1.79,1.79,0,0,0-.92.82A1.88,1.88,0,0,0,10,30.27a1.79,1.79,0,0,0,1.78,1.47l.4,0,.35-.07q1.55-.34,3.12-.56c1-.14,2.09-.23,3.15-.28q1.22,0,2.44,0t2.42.25a21.3,21.3,0,0,1,3.8.93A19.6,19.6,0,0,1,31,33.66h0l.06,0,.36.2a1.84,1.84,0,0,0,1.85-3.14,3.57,3.57,0,0,0-.36-.24l0,0h0a22.77,22.77,0,0,0-2.16-1.14,23.32,23.32,0,0,0-2.27-.9,25.39,25.39,0,0,0-4.26-1Z"
+                transform="translate(-0.71 -0.73)"></path>
+          </svg>
+          <div class="css-2b3un8">Spotify</div>
+        </div>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefYouTube">
+        <div class="css-u4eldh">
+          <svg width="36" height="36" viewBox="0 0 45 45">
+            <defs>
+                <style>
+                    .youtube-icon-circle-1 {
+                        fill: red;
+                    }
+
+                    .youtube-icon-circle-2 {
+                        fill: #fff;
+                    }
+                </style>
+            </defs>
+            <circle class="youtube-icon-circle-1" cx="22.5" cy="22.5" r="22.5"></circle>
+            <path id="lozenge-path-YouTubeCircleIcon-youtube-circle-icon" class="youtube-icon-circle-2"
+                d="M37.12,16a3.71,3.71,0,0,0-2.61-2.61C32.2,12.73,23,12.73,23,12.73s-9.24,0-11.55.62A3.71,3.71,0,0,0,8.79,16a38.56,38.56,0,0,0-.62,7.11,38.56,38.56,0,0,0,.62,7.11,3.71,3.71,0,0,0,2.61,2.61c2.31.62,11.55.62,11.55.62s9.24,0,11.55-.62a3.71,3.71,0,0,0,2.61-2.61,38.56,38.56,0,0,0,.62-7.11A38.56,38.56,0,0,0,37.12,16Z"
+                transform="translate(0 -0.58)"></path>
+            <polygon id="play-polygon-YouTubeCircleIcon-youtube-circle-icon" class="youtube-icon-circle-1"
+                points="20 26.93 27.68 22.5 20 18.07 20 26.93"></polygon>
+          </svg>
+          <div class="css-2b3un8">YouTube</div>
+        </div>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefYouTubeMusic">
+        <div class="css-u4eldh">
+          <svg width="36" height="36" viewBox="0 0 40 40">
+            <rect width="40" height="40" fill="black" fill-opacity="0"></rect>
+            <rect width="40" height="40" fill="black" fill-opacity="0"></rect>
+            <path
+                d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+                fill="#FF0000"></path>
+            <rect width="20.9091" height="20.9091" fill="black" fill-opacity="0"
+                transform="translate(9.54541 9.54541)"></rect>
+            <path
+                d="M20 10.4636C25.259 10.4636 29.5363 14.7409 29.5363 20C29.5363 25.259 25.259 29.5363 20 29.5363C14.7409 29.5363 10.4636 25.259 10.4636 20C10.4636 14.7409 14.7409 10.4636 20 10.4636ZM20 9.54541C14.225 9.54541 9.54541 14.225 9.54541 20C9.54541 25.775 14.225 30.4545 20 30.4545C25.775 30.4545 30.4545 25.775 30.4545 20C30.4545 14.225 25.775 9.54541 20 9.54541Z"
+                fill="white"></path>
+            <path d="M16.3636 25.2275L25.2273 19.7729L16.3636 14.7729V25.2275Z" fill="white"></path>
+          </svg>
+          <div class="css-2b3un8">YouTube Music</div>
+        </div>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefSoundCloud">
+        <div class="css-u4eldh">
+          <svg width="36" height="36" viewBox="0 0 45 45">
+            <defs>
+              <style>
+                .soundcloud-icon-circle-1 {
+                    fill: #f70;
+                }
+
+                .soundcloud-icon-circle-2 {
+                    fill: #fff;
+                }
+              </style>
+            </defs>
+            <title>sound cloud circle icon</title>
+            <path class="soundcloud-icon-circle-1"
+                d="M144.24,22.5a22.5,22.5,0,1,0-6.59,15.91A22.5,22.5,0,0,0,144.24,22.5Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M101.56,21.72a.17.17,0,0,0-.16.16l-.3,2.26.3,2.22a.17.17,0,0,0,.16.16.17.17,0,0,0,.16-.16h0l.35-2.22-.35-2.26a.17.17,0,0,0-.16-.16Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M103.23,20.49a.17.17,0,0,0-.34,0l-.4,3.65.4,3.57a.17.17,0,0,0,.34,0l.45-3.57-.45-3.65Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M109.53,17.12a.31.31,0,0,0-.31.3l-.32,6.72.32,4.34a.31.31,0,0,0,.62,0h0l.36-4.34-.36-6.72A.32.32,0,0,0,109.53,17.12Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M106.27,19.45a.24.24,0,0,0-.24.23l-.36,4.45.36,4.31a.24.24,0,0,0,.48,0l.41-4.31-.41-4.45A.25.25,0,0,0,106.27,19.45Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M112.84,28.78a.38.38,0,0,0,.38-.37l.31-4.27-.31-8.94a.38.38,0,0,0-.75,0l-.28,8.94.28,4.27A.38.38,0,0,0,112.84,28.78Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M119.62,28.8a.52.52,0,0,0,.52-.51h0l.22-4.15-.22-10.33a.52.52,0,0,0-1,0l-.19,10.32.19,4.15A.52.52,0,0,0,119.62,28.8Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M116.2,28.79a.45.45,0,0,0,.45-.44h0l.26-4.2-.27-9a.45.45,0,0,0-.89,0l-.24,9,.24,4.2a.45.45,0,0,0,.45.44Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M107.89,28.75a.28.28,0,0,0,.27-.27l.38-4.34L108.16,20a.27.27,0,0,0-.55,0l-.34,4.13.34,4.34A.28.28,0,0,0,107.89,28.75Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M104.66,28.51a.21.21,0,0,0,.2-.2l.43-4.17-.43-4.33a.21.21,0,0,0-.2-.2.21.21,0,0,0-.2.2l-.38,4.33.38,4.17a.21.21,0,0,0,.2.2Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M117.91,15a.48.48,0,0,0-.48.48l-.22,8.68.22,4.18a.48.48,0,0,0,1,0h0l.24-4.18-.24-8.68a.48.48,0,0,0-.48-.48Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M111.18,28.79a.35.35,0,0,0,.34-.34l.34-4.31-.34-8.25a.34.34,0,0,0-.69,0l-.3,8.25.3,4.31A.35.35,0,0,0,111.18,28.79Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M114.93,28.39h0l.29-4.24-.29-9.24a.41.41,0,0,0-.82,0l-.26,9.24.26,4.24a.41.41,0,0,0,.82,0h0Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M136.75,18.81a5,5,0,0,0-1.93.39,8.82,8.82,0,0,0-8.79-8,8.94,8.94,0,0,0-3.2.6c-.38.15-.48.3-.48.59V28.22a.61.61,0,0,0,.54.59h13.86a5,5,0,0,0,0-10Z"
+                transform="translate(-99.24 0)"></path>
+            <path class="soundcloud-icon-circle-2"
+                d="M121.33,12.33a.56.56,0,0,0-.55.55l-.23,11.26.23,4.09a.55.55,0,0,0,1.1,0h0l.25-4.09-.25-11.26a.56.56,0,0,0-.55-.55Z"
+                transform="translate(-99.24 0)"></path>
+          </svg>
+          <div class="css-2b3un8">SoundCloud</div>
+        </div>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" data-test-id="link" class="css-1spf6ft" id="hrefYandexMusic">
+        <div class="css-u4eldh">
+          <svg width="37.800000000000004" height="36" viewBox="0 0 21 20">
+            <path
+                d="M4.04695 1.93086C5.52349 0.832921 7.28399 0.17037 9.1202 0V3.02881C7.94654 3.18025 6.81073 3.63457 5.8453 4.35391C4.63378 5.24362 3.74407 6.51193 3.30868 7.95061C2.87329 9.3893 2.91115 10.9226 3.40333 12.3424C3.91444 13.7621 4.86094 14.9737 6.11033 15.8066C7.35971 16.6395 8.83625 17.056 10.3507 16.9802C11.8461 16.9045 13.2848 16.3555 14.4585 15.409C15.6321 14.4625 16.4461 13.1564 16.8247 11.6988C17.0897 10.6765 17.1087 9.63539 16.9004 8.61316L19.4371 6.56872V6.54979C20.1185 8.44279 20.2321 10.4872 19.7399 12.437C19.2099 14.5193 18.0362 16.3745 16.3704 17.7374C14.7046 19.1004 12.6412 19.8765 10.5021 19.9901C8.363 20.0848 6.24283 19.4979 4.44448 18.3053C2.66506 17.1127 1.3021 15.3712 0.582754 13.3457C-0.136587 11.3202 -0.193375 9.12428 0.431316 7.0609C1.05601 5.01646 2.32432 3.19918 4.04695 1.93086Z"
+                fill="#FCCA00"></path>
+            <path
+                d="M17.5062 3.3317L17.5251 3.35063L15.8214 6.03869C15.1967 5.13005 14.3828 4.35392 13.4173 3.82388V9.97614C13.4173 11.8502 11.884 13.3835 10.0099 13.3835C8.13584 13.3835 6.60251 11.8502 6.60251 9.97614C6.60251 8.10207 8.13584 6.56873 10.0099 6.56873C10.7103 6.56873 11.3729 6.77696 11.9218 7.15556V0.132523C14.1177 0.567913 16.0865 1.72265 17.5062 3.3317Z"
+                fill="#FC3F1D"></path>
+          </svg>
+          <div class="css-2b3un8">Yandex</div>
+        </div>
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
